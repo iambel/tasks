@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>via CEP</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Consulta</h1>
+      <label for="cep">Digite o CEP </label>
+      <input type="text" id="cep" maxlength="9" placeholder="ex: 01001-000" />
+      <button id="buscar">Buscar</button>
+
+      <div id="resultado"></div>
+
+      <script>
+        const inputCep = document.GetElementById('cep')
+        const btnBuscar = document.getElementById('buscar')
+        const divResultado = document.getElementById('resultado')
+
+        async function consultarCep(){
+            const cep = inputCep.value
+            const url =
+            try {
+                const  resp = await fetch(url,{method: 'GET'})
+
+                const data = await resp.json()
+
+                divResultado.innerHTML = `
+                <h2>Endereço encontrado:</h2>
+                <ul>
+                    <li>CEP: ${data.cep}</li>
+                </ul>
+                `
+            }
+        }
+      </script>
+    </main>
+    <footer></footer>
+  </body>
+</html>
