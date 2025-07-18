@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #161e27;
+  color: #f4f4f4;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: #465e7c;
+  width: 0;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  background-color: #465e7c;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav a {
+  padding: 5px;
+  font-size: 18px;
+  color: #f1f1f1;
+  display: block;
+}
+
+nav a:hover {
+  color: #3436d1;
+}
+
+nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+main {
+  padding: 0 60px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.about-language {
+  font-size: 18px;
+  font-weight: 500;
+  color: #f4f4f4;
+}
+.about-language a:hover {
+  color: #465e7c;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-links {
+  margin-top: 15px;
+}
+.about-links a {
+  border: solid 1.5px #f4f4f4;
+  padding: 10px;
+  border-radius: 10px;
+}
+.about-links a:hover {
+  background-color: #465e7c;
+}
+.about img {
+  width: 40px;
+  height: 40px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 15px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.skills-list ul {
+  list-style: none;
+  padding: 10px;
+  background-color: #b4b4b4;
+  min-width: 100%;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.skills-list ul li img:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: 0.2s;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.card {
+  background-color: #b4b4b4;
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 10px 15px 10px #0c1118;
+}
+
+.card-info {
+  color: #3a3636;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card span {
+  background-color: #465e7c;
+  color: #f4f4f4;
+  padding: 6px;
+  border-radius: 6px;
+}
+.card-info a {
+  font-weight: 700;
+}
+
+.card-info img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-repositories {
+  padding: 18px;
+  border: solid 1.5px #f4f4f4;
+  border-radius: 10px;
+}
+.btn-repositories:hover {
+  background-color: #465e7c;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 0 1vh 0;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
