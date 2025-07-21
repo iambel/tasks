@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 3</title>
+  </head>
+  <body>
+    <form align="center">
+        <h1>Formulário de Feedback</h1>
+      <div>
+        <label for="name">Nome: </label>
+        <input type="text" id="name" placeholder="ex.: Maria Helena" />
+      </div>
+
+      <div>
+        <label for="email">E-mail: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ex.: teste123@gmail.com"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="adress">Endereço: </label>
+        <input type="text" id="adress" placeholder="ex.: Rua A, 123" />
+      </div>
+
+      <div>
+        <label for="feedback_type">Tipo de feedback: </label>
+        <select 
+        name="feedback_type" id="feedback_type">
+          <option value="reclamacao">Reclamação</option>
+          <option value="sugestao">Sugestão</option>
+          <option value="elogio">Elogio</option>
+      </div>
+
+      <div>
+        <label for="message">Mensagem: </label>
+        <textarea 
+        name="message" 
+        id="message"
+        rows="5"
+        cols="30"
+        placeholder="Conceda um feedback aqui"></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
