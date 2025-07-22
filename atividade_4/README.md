@@ -7,7 +7,9 @@
 | [Visão Geral](#visão-geral) |
 |   [Estrutura](#estrutura)   |
 | [Tecnologias](#tecnologias) |
-[Visualizar Projeto](https://personal-portfolio-peach-kappa-40.vercel.app/)
+
+
+[ [Visualizar Projeto](https://personal-portfolio-peach-kappa-40.vercel.app/) ]
 </div>
 
 ## Visão Geral
