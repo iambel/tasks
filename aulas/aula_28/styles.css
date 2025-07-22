@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #e5e0d8;
+  color: #f0f0f0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  background-color: #1b3c53;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card {
+  background-color: #456882;
+  height: 200px;
+  width: 200px;
+  border: solid 2px #333333;
+  padding: 20px;
+  font-size: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.card img {
+  height: 100px;
+  width: 100px;
+}
+
+.card-button {
+  background-color: #1b3c53;
+  border-radius: 5px;
+  padding: 6px;
+
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>todo list</h1>
+      <form id="form-add">
+        <input
+          id="input-item"
+          type="text"
+          placeholder="adicione uma task"
+          required
+        />
+        <button type="submit">add</button>
+      </form>
+      <ul id="list-itens"></ul>
+      <button class="reset" id="btn-reset">reset</button>
+    </div>
+  </body>
+</html>

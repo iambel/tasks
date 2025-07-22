@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "display display display"
+    "buttons-simbols buttons-numbers buttons-operations"
+    "copy copy";
+
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.display {
+  border: inherit;
+  grid-area: display;
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 20px;
+  text-align: right;
+  font-size: 2em;
+
+  /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.buttons-numbers {
+  border: inherit;
+  grid-area: buttons-numbers;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.buttons-operations {
+  border: inherit;
+  grid-area: buttons-operations;
+}
+
+.buttons-simbols {
+  border: inherit;
+  grid-area: buttons-simbols;
+}
+
+.copy {
+  border: inherit;
+  grid-area: copy;
+}
+
+.button {
+  background-color: #ccc;
+}
