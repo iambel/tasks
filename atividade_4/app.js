@@ -1,9 +1,9 @@
-/* Set the width of the side navigation to 250px */
+// função para abrir um menu lateral
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("sidenav").style.width = "250px"; // pegando o elemento pelo o id e alterando o witdth
 }
 
-/* Set the width of the side navigation to 0 */
+// função para fechar o menu lateral
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("sidenav").style.width = "0"; // diminui o width para sumir
 }
