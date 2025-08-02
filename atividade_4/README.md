@@ -2,14 +2,14 @@
 
 # Personal Portfolio
 
-[PT-BR](#pt-br) | [EN-US](#english)
-
 |           ÍNDICE            |
 | :-------------------------: |
 | [Visão Geral](#visão-geral) |
 |   [Estrutura](#estrutura)   |
 | [Tecnologias](#tecnologias) |
 
+
+[ [Visualizar Projeto](https://personal-portfolio-peach-kappa-40.vercel.app/) ]
 </div>
 
 ## Visão Geral
