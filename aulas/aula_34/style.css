@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*para não ter problemas com o box model */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+header {
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Mantém à frente do conteúdo */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+.toggle-menu:hover {
+  outline: 2px solid #333;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li + li {
+  margin-left: 1rem;
+}
+
+@media (max-width: 668px) {
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .menu-list {
+    display: none;
+  }
+  .toggle-menu {
+    display: block;
+  }
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+.hero {
+  background-color: #f4f4f4;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero .btn {
+  text-decoration: none;
+}
+
+.services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* isso faz o grid se adaptar ao tamanho da tela */
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+.contact {
+  padding: 2rem 0;
+}
+
+.form-group {
+  margin-top: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+textarea {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 0.2rem 0.5rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  text-align: center;
+}

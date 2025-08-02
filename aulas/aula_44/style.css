@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 1em;
+  height: 100vh;
+}
+
+.container {
+  border: solid 2px #333;
+  margin: 1em;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.cards div {
+  background-color: #e4e4e4;
+}
