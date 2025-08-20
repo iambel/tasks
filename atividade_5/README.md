@@ -22,7 +22,7 @@
 |   [Estrutura](#estrutura)   |
 | [Tecnologias](#tecnologias) |
 
-[ [Visualizar Projeto]() ]
+[ [Visualizar Projeto](https://watchit-movies.vercel.app/) ]
 
 </div>
 
@@ -39,6 +39,27 @@ Funcionalidades:
 
 ## Estrutura
 
+```bash
+├── src/                    
+│   ├── assets/            # background, ícones, favicons, etc
+│   ├── components/        # componentes reutilizáveis 
+│   ├── contexts/          # context para wishlist
+│   ├── hooks/             # hook para wishlist
+│   ├── pages/             # páginas principais 
+│   ├── styles/            # estilos globais 
+│   ├── App.jsx            # componente raiz
+│   └── main.jsx           # ponto de entrada
+├── .env                   # variáveis de ambiente 
+├── .gitignore             # arquivos e pastas ignorados
+├── eslint.config.js       # configuração do eslint 
+├── index.html             # index principal 
+├── LICENSE                # licença do projeto
+├── package-lock.json      # lock das dependências
+├── package.json           # dependências e scripts do projeto
+├── README.md              # documentação do projeto
+└── vite.config.js         # configuração do vite
+```
+
 ## Tecnologias
 
 - React
@@ -49,6 +70,8 @@ Funcionalidades:
 - Swiper.js
 - Material UI
 
+
+---
 <div align='center'>
 
 Fique à vontade para abrir uma _issue_ ou entrar em contato.
@@ -56,5 +79,3 @@ Fique à vontade para abrir uma _issue_ ou entrar em contato.
 ![banner](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDh2MHdvMm5tY2FleTRleTB5eXllcXV4b2JjcHluZ3lxaHdkems0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iS9UfhmWhlgzibdc1S/giphy.gif)
 
 </div>
-
----
