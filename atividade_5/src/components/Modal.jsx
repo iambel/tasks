@@ -22,7 +22,7 @@ export default function BasicModal({ movie }) {
   const handleClose = () => setOpen(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const api_key = "bbe0da5f3524ae8d97e17e1917c28196";
+  const api_key = import.meta.env.VITE_API_KEY;
   const [movieDetails, setMovieDetails] = useState({});
   console.log(movie);
   const [director, setDirector] = useState("");
