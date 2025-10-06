@@ -7,6 +7,14 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# intellij
+.idea/
+*.iml
+out/
+*.class
+hs_err_pid*
+replay_pid*
+
 # build / dist
 dist/
 build/
